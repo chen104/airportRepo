@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:background="@drawable/bg_chat_item_flight_list_item"
+        android:paddingBottom="5dp"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+
+    >
+    <TextView
+        android:id="@+id/tv_from_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:30"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/tv_from_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="6"
+        android:text="宝安机场T2"
+
+        android:layout_below="@id/tv_from_time"
+        />
+
+    <ImageView
+        android:id="@+id/img_point"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/tv_from_time"
+        android:layout_toRightOf="@id/tv_from_time"
+        android:src="@drawable/plane"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+    <TextView
+
+        android:id="@+id/tv_flight_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:30"
+        android:layout_below="@id/img_point"
+        android:layout_alignLeft="@id/img_point"
+        android:visibility="gone"
+        />
+
+    <TextView
+
+        android:id="@+id/tv_arrive_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18:30"
+        android:textSize="25sp"
+        android:layout_toEndOf="@id/img_point"
+        android:layout_toRightOf="@id/img_point"
+        />
+
+    <TextView
+        android:id="@+id/tv_arrive_airport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首都机场T3"
+        android:layout_below="@id/tv_arrive_time"
+        android:layout_alignLeft="@id/tv_arrive_time"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_ticket_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥1230"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/bt_booke_ticket"
+        android:text="订票"
+        android:layout_below="@id/tv_ticket_cost"
+        android:layout_alignRight="@id/tv_ticket_cost"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_flight_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_from_airport"
+        android:layout_alignLeft="@id/tv_from_airport"
+        >
+        <TextView
+            android:id="@+id/tv_flight_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南航CZ3434"
+            />
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            />
+        <TextView
+            android:id="@+id/tv_flight_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="空客320(中)"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_flight_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

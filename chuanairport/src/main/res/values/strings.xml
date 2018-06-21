@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">chuanAirport</string>
+    <string name="iflytekAppId">5995924d</string>
+    <string name="title_activity_float">FloatActivity</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">
+        <![CDATA[
+
+
+            This sample demonstrates the basic use of Camera2 API. Check the source code to see how
+            you can display camera preview and take pictures.
+
+
+        ]]>
+    </string>
+    <string name="what_is_on_your_mind">输入想说的话</string>
+</resources>

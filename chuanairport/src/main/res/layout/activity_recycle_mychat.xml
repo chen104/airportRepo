@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibm.airport.MainActivity"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <com.ibm.airport.view.ChatListView
+            android:id="@+id/recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            >
+
+        </com.ibm.airport.view.ChatListView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/bt_record"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/microphone"
+                android:background="@android:color/white"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/bt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/pc_send"
+                android:background="@android:color/white"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/bt_send"
+                android:layout_toRightOf="@id/bt_record"
+                android:background="@drawable/bg_editview"
+                android:hint="@string/what_is_on_your_mind"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                />
+
+        </RelativeLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+            <!--<Button-->
+                <!--android:id="@+id/bt_record"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="点击说话"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+            <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="2"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" -->
+                <!--android:text="发送"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+        <!--</LinearLayout>-->
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

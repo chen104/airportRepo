@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="control_background">#cc4285f4</color>
+
+
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_watbot">#ecf0f1</color>
+    <color name="bg_chat_item_custom_back">#83d1f5</color>
+    <color name="bg_actionbar_bg">#00b0da</color>
+    <color name="fuction_boardlight">#83d1f5</color>
+
+    <color name="chat_item_flight_list_item_broadcolor">#62caa6</color>
+
+    <color name="bg_gray">#aaa</color>
+</resources>
