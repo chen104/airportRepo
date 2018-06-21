@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/dialog_flight_bg"
+        android:padding="20dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退改签业务"
+            android:textSize="24sp" />
+        <View
+            android:background="#55ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您好,帮您查询到您的业务:"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="票号:"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证号:"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可进行如下操作:"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="10dp"
+                android:id="@+id/button1"
+                android:padding="10dp"
+                android:background="@mipmap/button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="改签"
+                android:textSize="24sp"/>
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/button2"
+                android:padding="10dp"
+                android:background="@mipmap/button_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="退票"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_gravity="right"
+        android:id="@+id/close"
+        android:layout_width="60dp"
+        android:layout_height="40dp"/>
+</FrameLayout>

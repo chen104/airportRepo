@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    android:background="@mipmap/home_activity_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/button"
+        android:layout_marginRight="180dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right|top"
+        android:text="放弃"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_bg"/>
+    <Button
+        android:id="@+id/bt_stop_tts"
+        android:layout_marginRight="290dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right|top"
+        android:text="停止说话"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_bg"/>
+
+    <Button
+        android:id="@+id/bt_sleep"
+        android:layout_marginRight="400dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right|top"
+        android:text="不说了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_bg"/>
+
+    <Button
+        android:id="@+id/bt_chat"
+        android:layout_marginRight="500dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right|top"
+        android:text="闲聊"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_bg"/>
+</FrameLayout>

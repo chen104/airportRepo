@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IBM</string>
+    <string name="cruiser_call">带路|再见|谢谢你饭|我需要帮助</string>
+
+
+    <string name="str_meilan_airport">美兰国际机场</string>
+    <string name="str_shuangliu_airport">双流国际机场T2</string>
+    <string name="str_flight_date">2018-04-5</string>
+    <string name="exit_key">exit</string>
+
+    <declare-styleable name="DraggableFlagView">
+        <attr name="color1" format="color" />
+    </declare-styleable>
+</resources>
